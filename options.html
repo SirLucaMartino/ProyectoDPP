@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configuración - AsistenteDPP</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .options-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--gray-300);
+      border-radius: 0.5rem;
+    }
+    
+    .save-button {
+      width: 100%;
+      margin-top: 1rem;
+    }
+    
+    .status-message {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+    
+    .status-message.success {
+      background-color: #dcfce7;
+      color: #166534;
+    }
+    
+    .status-message.error {
+      background-color: #fee2e2;
+      color: #991b1b;
+    }
+  </style>
+</head>
+<body>
+  <div class="options-container">
+    <h1>Configuración de AsistenteDPP</h1>
+    
+    <form id="options-form">
+      <div class="form-group">
+        <label for="api-key">API Key de OpenAI</label>
+        <input 
+          type="password" 
+          id="api-key" 
+          placeholder="sk-..." 
+          required
+        >
+      </div>
+      
+      <button type="submit" class="send-button save-button">
+        Guardar Configuración
+      </button>
+    </form>
+    
+    <div id="status-message" class="status-message" style="display: none;"></div>
+  </div>
+  
+  <script src="options.js"></script>
+</body>
+</html>

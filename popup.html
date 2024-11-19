@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AsistenteDPP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <img src="assets/logo.png" alt="Logo DPP" class="logo">
+      <h1>AsistenteDPP</h1>
+    </header>
+
+    <main class="main-content">
+      <div class="chat-container">
+        <div id="chat-messages" class="chat-messages">
+          <div class="message system">
+            Bienvenido al Asistente Virtual de la Defensoría Penal Pública de Arica. ¿En qué puedo ayudarte?
+          </div>
+        </div>
+        
+        <div class="input-container">
+          <textarea 
+            id="query-input" 
+            placeholder="Escribe tu consulta aquí..."
+            rows="3"
+          ></textarea>
+          <button id="send-button" class="send-button">
+            <span class="button-text">Enviar</span>
+            <div class="loading-spinner"></div>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Defensoría Penal Pública de Arica © 2024</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

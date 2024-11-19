@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "AsistenteDPP",
+  "version": "1.0.0",
+  "description": "Asistente virtual para consultas legales - Defensoría Penal Pública de Arica",
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.openai.com/*"
+  ],
+  "options_page": "options.html"
+}
